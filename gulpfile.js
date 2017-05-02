@@ -4,7 +4,6 @@ var uglify = require('gulp-uglify');
 
 
 var cssFiles = [
-	'bower_components/bootstrap/dist/css/bootstrap.min.css',
 	'assets/css/chat.css'
 ];
 

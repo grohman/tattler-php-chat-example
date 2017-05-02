@@ -1,0 +1,11 @@
+{
+  "name": "tattler-php-chat-example",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/grohman",
+  "private": true
+}

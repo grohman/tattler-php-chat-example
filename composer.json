@@ -1,0 +1,17 @@
+{
+    "name": "grohman/tattler-php-chat-example",
+    "description": "Tattler-PHP example",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Podrabinek",
+            "email": "dpodrabinek@oktopost.com"
+        }
+    ],
+    "require": {
+	"predis/predis": "^1.1",
+        "oktopost/tattler-php": "^1.0",
+        "vlucas/phpdotenv": "^2.4"
+    }
+}

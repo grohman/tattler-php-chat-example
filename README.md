@@ -2,3 +2,6 @@
 2) Copy .env.example to .env
 3) Update .env
 4) composer install
+
+---
+Live example at https://tattler-chat.grohman.ru

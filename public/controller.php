@@ -23,9 +23,8 @@ $dotenv->load();
 $tattler = Common::skeleton(ITattler::class);
 
 $config = new TattlerConfig();
-$config->Server = getenv('TATTLER_SERVER');
-$config->Port = getenv('TATTLER_PORT');
-$config->Secure = (bool)getenv('TATTLER_SECURE');
+$config->WsAddress = getenv('TATTLER_WS');
+$config->ApiAddress = getenv('TATTLER_API');
 $config->Secret = getenv('TATTLER_SECRET');
 $config->Namespace = getenv('TATTLER_NAMESPACE');
 

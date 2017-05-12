@@ -11,7 +11,7 @@
     ],
     "require": {
 	"predis/predis": "^1.1",
-        "oktopost/tattler-php": "^1.0",
+        "oktopost/tattler-php": "^1.0.6.3",
         "vlucas/phpdotenv": "^2.4"
     }
 }

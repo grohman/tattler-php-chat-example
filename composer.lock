@@ -208,16 +208,16 @@
         },
         {
             "name": "oktopost/tattler-php",
-            "version": "1.0.6",
+            "version": "1.0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oktopost/Tattler-php.git",
-                "reference": "92e9904076f4f2857a7cc2278b8951461489a5d1"
+                "reference": "2c50344180471fd145d9166aede974dafe7e3e0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oktopost/Tattler-php/zipball/92e9904076f4f2857a7cc2278b8951461489a5d1",
-                "reference": "92e9904076f4f2857a7cc2278b8951461489a5d1",
+                "url": "https://api.github.com/repos/Oktopost/Tattler-php/zipball/2c50344180471fd145d9166aede974dafe7e3e0d",
+                "reference": "2c50344180471fd145d9166aede974dafe7e3e0d",
                 "shasum": ""
             },
             "require": {
@@ -262,7 +262,7 @@
                 }
             ],
             "description": "PHP Tattler client",
-            "time": "2017-05-02T10:22:03+00:00"
+            "time": "2017-05-12T18:12:44+00:00"
         },
         {
             "name": "predis/predis",

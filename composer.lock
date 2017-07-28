@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "15a022af51fbc6d36222dbaed3be9f9e",
+    "content-hash": "9ac083653e41cb614587579079cae005",
     "packages": [
         {
             "name": "00f100/uuid",
@@ -121,16 +121,16 @@
         },
         {
             "name": "oktopost/objection",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oktopost/Objection.git",
-                "reference": "879e141e27fefe46d76d0ce0bad8a482e950a8f7"
+                "reference": "c5500a64677b6a8ee0059a239ab7e980f1fcc69c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oktopost/Objection/zipball/879e141e27fefe46d76d0ce0bad8a482e950a8f7",
-                "reference": "879e141e27fefe46d76d0ce0bad8a482e950a8f7",
+                "url": "https://api.github.com/repos/Oktopost/Objection/zipball/c5500a64677b6a8ee0059a239ab7e980f1fcc69c",
+                "reference": "c5500a64677b6a8ee0059a239ab7e980f1fcc69c",
                 "shasum": ""
             },
             "require": {
@@ -165,25 +165,29 @@
             ],
             "description": "Objects in PHP",
             "homepage": "https://github.com/Oktopost/Objection",
-            "time": "2016-12-06T12:39:59+00:00"
+            "time": "2017-07-04T11:29:12+00:00"
         },
         {
             "name": "oktopost/skeleton",
-            "version": "1.0.9",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oktopost/Skeleton.git",
-                "reference": "fe10a5a0377b908cab9d9d13d66ada3a57187659"
+                "reference": "25af58d81e025a2bfa57e95931894c59140274c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oktopost/Skeleton/zipball/fe10a5a0377b908cab9d9d13d66ada3a57187659",
-                "reference": "fe10a5a0377b908cab9d9d13d66ada3a57187659",
+                "url": "https://api.github.com/repos/Oktopost/Skeleton/zipball/25af58d81e025a2bfa57e95931894c59140274c9",
+                "reference": "25af58d81e025a2bfa57e95931894c59140274c9",
                 "shasum": ""
             },
             "require": {
                 "oktopost/objection": "^1.0.0",
-                "php": ">=5.5"
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2",
+                "satooshi/php-coveralls": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -204,35 +208,35 @@
             ],
             "description": "Inversion of Control library",
             "homepage": "https://github.com/Oktopost/Skeleton",
-            "time": "2017-02-20T06:46:22+00:00"
+            "time": "2017-07-27T15:11:38+00:00"
         },
         {
             "name": "oktopost/tattler-php",
-            "version": "1.0.6.3",
+            "version": "1.0.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Oktopost/Tattler-php.git",
-                "reference": "2c50344180471fd145d9166aede974dafe7e3e0d"
+                "reference": "6765507fb2e04e12aad5f460764f6139eb4d8a30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Oktopost/Tattler-php/zipball/2c50344180471fd145d9166aede974dafe7e3e0d",
-                "reference": "2c50344180471fd145d9166aede974dafe7e3e0d",
+                "url": "https://api.github.com/repos/Oktopost/Tattler-php/zipball/6765507fb2e04e12aad5f460764f6139eb4d8a30",
+                "reference": "6765507fb2e04e12aad5f460764f6139eb4d8a30",
                 "shasum": ""
             },
             "require": {
                 "00f100/uuid": "4.0.0",
                 "firebase/php-jwt": "^4.0",
                 "oktopost/objection": "^1.0",
-                "oktopost/skeleton": "^1.0",
-                "php": ">=5.6-stable"
+                "oktopost/skeleton": "^1.0.10",
+                "php": ">=7.1-stable"
             },
             "require-dev": {
                 "guzzlehttp/guzzle": "^6.2",
                 "nategood/httpful": "^0.2.20",
                 "oktopost/squanch": "^1.1",
                 "oktopost/squid": "^1.0",
-                "phpunit/phpunit": "5.5.*",
+                "phpunit/phpunit": "^6.2",
                 "predis/predis": "^1.1"
             },
             "suggest": {
@@ -262,7 +266,7 @@
                 }
             ],
             "description": "PHP Tattler client",
-            "time": "2017-05-12T18:12:44+00:00"
+            "time": "2017-06-30T01:20:25+00:00"
         },
         {
             "name": "predis/predis",

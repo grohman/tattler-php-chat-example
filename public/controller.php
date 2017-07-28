@@ -1,10 +1,9 @@
 <?php
-
+use Tattler\SkeletonInit;
+use Tattler\Objects\TattlerConfig;
 use Tattler\Base\Channels\IUser;
 use Tattler\Base\Modules\ITattler;
 use Tattler\Base\Objects\ITattlerMessage;
-use Tattler\Common;
-use Tattler\Objects\TattlerConfig;
 
 
 require_once "../vendor/autoload.php";
@@ -20,13 +19,14 @@ $dotenv->load();
 
 
 /** @var ITattler $tattler */
-$tattler = Common::skeleton(ITattler::class);
+$tattler = SkeletonInit::skeleton(ITattler::class);
 
 $config = new TattlerConfig();
 $config->WsAddress = getenv('TATTLER_WS');
 $config->ApiAddress = getenv('TATTLER_API');
 $config->Secret = getenv('TATTLER_SECRET');
 $config->Namespace = getenv('TATTLER_NAMESPACE');
+$config->TokenTTL = 3600;
 
 $tattler->setConfig($config);
 
@@ -37,7 +37,7 @@ if (isset($get['ws']))
 else if (isset($get['channels']))
 {
 	/** @var IUser $user */
-	$user = Common::skeleton(IUser::class);
+	$user = SkeletonInit::skeleton(IUser::class);
 	$user->setName(session_id())->setSocketId($get['socketId']);
 	
 	$tattler->setUser($user);
@@ -51,7 +51,7 @@ else if (isset($get['auth']))
 else if ($post)
 {
 	/** @var ITattlerMessage $tattlerMessage */
-	$tattlerMessage = Common::skeleton(ITattlerMessage::class);
+	$tattlerMessage = SkeletonInit::skeleton(ITattlerMessage::class);
 	$tattlerMessage->setHandler('message')->setPayload(['message' => $post['message']]);
 	$tattler->message($tattlerMessage)->broadcast()->say();
 	

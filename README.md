@@ -4,4 +4,4 @@
 4) composer install
 
 ---
-Live example at https://tattler-chat.grohman.ru
+Live example at <https://tattler-chat.grohman.ru>

@@ -20,7 +20,7 @@ $(function () {
 			auth: '/controller.php?auth'
 		},
 		autoConnect: true,
-		debug: false
+		debug: true
 	});
 
 	tattler.addHandler('message', function (data) {
